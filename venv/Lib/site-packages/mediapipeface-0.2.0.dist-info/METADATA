@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: mediapipeface
+Version: 0.2.0
+Summary: Mediapipe face implementations.
+Home-page: https://github.com/Pritam-N/mediapipeface
+Author: Pritama Nayak
+Author-email: nayak264@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: mediapipe (>=0.8)
+Requires-Dist: opencv-python
+Provides-Extra: dev
+Requires-Dist: pytest (>=3.7) ; extra == 'dev'
+
+# mediapipeface
+
+This is a package using mediapipe for face detection and mesh creation. 
+
+It has two modules:
+
+    1. facedetectmodule for face detection from video/webcam
+    2. facemeshmodule for generating module from video/webcam
+
+Works well using mp4 videos. 
+
+## installation
+
+Run the following to install:
+```python
+pip install mediapipeface
+```
+
+## usage
+
+```python
+import facedetectmodule as fdm
+fdm.main('sample.mp4')
+```
+
+## develop
+```bash
+$ pip install -e .[dev]
+```
+
